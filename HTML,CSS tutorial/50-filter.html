@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 300px;
+        height: 200px;
+        filter: grayscale(100%);
+        transition: 0.5s;
+        /* transform: scale(0.7); */
+      }
+      img:hover {
+        filter: grayscale(0);
+        transform: scale(2) rotate(10deg);
+      }
+
+      div {
+        overflow: hidden;
+        border: 5px solid red;
+        width: 300px;
+        height: 200px;
+        transition: 0.5s;
+      }
+      div:hover {
+        transform: scale(2) rotate(10deg);
+        border-width: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- https://www.w3schools.com/cssref/playdemo.php?filename=playcss_color -->
+    <img src="./lib/img/01.jpg" alt="" />
+    <img src="./lib/img/02.jpg" alt="" />
+    <img src="./lib/img/03.jpg" alt="" />
+    <img src="./lib/img/04.png" alt="" />
+    <img src="./lib/img/05.jpg" alt="" />
+
+    <div>
+      <img src="./lib/img/car.jpg" alt="" />
+    </div>
+  </body>
+</html>

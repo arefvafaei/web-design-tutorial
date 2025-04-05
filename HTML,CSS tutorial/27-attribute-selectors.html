@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* https://www.w3schools.com/css/css_attribute_selectors.asp */
+      a[target="_blank"]::after {
+        background-color: yellow;
+        content: url(./lib/img/box-arrow-up-right.svg);
+      }
+
+      /* regular expression
+      
+      patterns used to match character combinations in strings
+
+      email regex => https://regexr.com/3e48o
+      */
+      a[href*="link"] {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <br />
+    <a href="/about-me.html">About Me</a>
+
+    <br />
+    <a href="#link01" target="_blank">link01</a>
+    <a href="#link02">link02</a>
+    <a href="#link03">link03</a>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .row {
+        display: flex;
+      }
+
+      div p:first-child {
+        background-color: lightcoral;
+      }
+
+      div p:last-child {
+        background-color: lightblue;
+      }
+
+      @media (max-width: 576px) {
+        .row {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas quisquam, aperiam
+        provident laboriosam id corporis cumque repellat molestias iusto dignissimos veritatis
+        dolor, exercitationem in atque accusamus incidunt libero inventore qui!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, sapiente incidunt porro
+        et libero hic quaerat molestiae id sint debitis accusantium, accusamus rem dolorum beatae
+        molestias odit, quibusdam ad asperiores?
+      </p>
+    </div>
+  </body>
+</html>

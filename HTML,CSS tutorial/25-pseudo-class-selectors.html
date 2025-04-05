@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* https://www.w3schools.com/cssref/css_ref_pseudo_classes.php */
+      a {
+        color: purple;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:active {
+        background-color: yellow;
+      }
+
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid green;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+
+      tr:nth-child(even) {
+        background-color: yellow;
+      }
+      tr:nth-child(odd) {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#link11">link 01</a>
+    <a href="#link22">link 02</a>
+    <a href="#link33">link 03</a>
+
+    <table>
+      <tr>
+        <th class="column1">Row</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Soroush</td>
+        <td>Norouzi</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Azadeh</td>
+        <td>Pasandideh</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Soroush</td>
+        <td>Norouzi</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Soroush</td>
+        <td>Norouzi</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Soroush</td>
+        <td>Norouzi</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Soroush</td>
+        <td>Norouzi</td>
+      </tr>
+    </table>
+  </body>
+</html>
