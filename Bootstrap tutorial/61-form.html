@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="https://www.w3schools.com/action_page.php" method="GET" target="">
+      <div>
+        <label for="userName">User Name</label>
+        <input id="userName" name="UserName" type="text" required />
+        <!-- UserName=value -->
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input id="password" name="Password" type="password" />
+      </div>
+      <div>
+        <input id="remmeberMe" name="RememberMe" type="checkbox" />
+        <label for="remmeberMe">Remember Me</label>
+      </div>
+      <div>
+        <input type="radio" id="male" name="Gender" value="Male" />
+        <label for="male">Male</label>
+
+        <br />
+
+        <input type="radio" id="female" name="Gender" value="Female" />
+        <label for="female">Female</label>
+      </div>
+
+      <div>
+        <input type="email" placeholder="Email" required />
+      </div>
+      <div>
+        <input
+          type="tel"
+          placeholder="09XX-XXX-XX-XX"
+          required
+          pattern="09[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        />
+      </div>
+      <div>
+        <select name="City" id="">
+          <option value="Tehran">تهران</option>
+          <option value="Rasht">رشت</option>
+          <option value="Shiraz">شیراز</option>
+        </select>
+      </div>
+
+      <div>
+        <textarea name="" id=""></textarea>
+      </div>
+      <div>
+        <input type="submit" />
+        <input type="button" value="button" />
+
+        <button>Button Tag</button>
+        <input type="reset" />
+      </div>
+    </form>
+  </body>
+</html>
