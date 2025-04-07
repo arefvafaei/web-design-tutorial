@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contianer p-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="input-group">
+            <input type="text" id="score" class="form-control" />
+            <button onclick="addScore()" class="btn btn-success">Add Scores</button>
+            <button class="btn btn-info" onclick="showScores()">Show Scores</button>
+            <button class="btn btn-primary" onclick="showAverage()">Show Average</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const scores = [];
+
+      function addScore() {
+        const score = Number(document.getElementById("score").value);
+        if (score >= 0 && score <= 20) {
+          scores.push(score);
+          showScores();
+        } else {
+          alert("Wrong Score!");
+        }
+      }
+
+      function showScores() {
+        console.log(scores);
+      }
+
+      function average() {
+        const sum = scores[0] + scores[1];
+      }
+
+      function showAverage() {
+        let sum = 0;
+        for (let i = 0; i < scores.length; i++) {
+          // sum = sum + scores[i];
+          sum += scores[i];
+        }
+
+        const avg = sum / scores.length;
+
+        console.log(avg.toFixed(2));
+      }
+    </script>
+
+    <script src="./lib/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

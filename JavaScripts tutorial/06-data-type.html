@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // 1.string
+      const firstName = "Mohammad";
+
+      const lastName = "Salimi";
+
+      //   const fullName = firstName + " " + lastName;
+
+      const fullName = `${firstName} ${lastName}`;
+
+      const menu = `<ul>
+        <li><a href="#">${firstName}</a></li>
+        <li><a href="#">${lastName}</a></li>
+        <li><a href="#">${fullName}</a></li>
+      </ul>`;
+
+      document.getElementById("root").innerHTML = menu;
+
+      console.log(menu);
+
+      // 2.number
+      const age = 21;
+
+      // 3.bigint
+
+      const money = 923456789012345676n;
+
+      // 4. bool
+      const isMaried = false;
+
+      // 6.undefined
+      let test;
+      // 5. null
+
+      const test1 = null;
+
+      const studentName = "";
+      const code = 0;
+
+      // 8.Object
+      const car = {
+        brand: "Paykan",
+        model: "Javanan",
+        color: "Tomato",
+        start() {
+          console.log("Paykan is started...");
+        },
+        drive() {
+          console.log("Paykan is driving...");
+        },
+      };
+
+      console.log(car.brand);
+      console.log(car.color);
+      car.start();
+      car.drive();
+
+      car.color = "Red";
+      console.log(car.color);
+    </script>
+  </body>
+</html>

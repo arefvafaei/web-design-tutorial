@@ -1,0 +1,84 @@
+@import url(./red.css);
+
+@font-face {
+  font-family: "vazirmatn";
+  src: url(../fonts/vazirmatn/Vazirmatn[wght].woff2) format("woff2");
+}
+
+/* 
+
+name: golabi
+versoin: 1.0.0
+
+*/
+
+body {
+  font-family: "vazirmatn";
+}
+
+.border {
+  border: 1px solid var(--gray);
+}
+
+.border-0 {
+  border-width: 0;
+}
+.border-1 {
+  border-width: 1px;
+}
+.border-2 {
+  border-width: 2px;
+}
+.border-3 {
+  border-width: 3px;
+}
+.border-4 {
+  border-width: 4px;
+}
+.border-5 {
+  border-width: 5px;
+}
+
+.border-danger {
+  border-color: var(--danger);
+}
+
+.border-info {
+  border-color: var(--info);
+}
+
+.border-warning {
+  border-color: var(--warning);
+}
+.border-success {
+  border-color: var(--success);
+}
+
+.p-0 {
+  padding: 0;
+}
+.p-1 {
+  padding: 0.25rem;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.p-3 {
+  padding: 1rem;
+}
+.p-4 {
+  padding: 1.5rem;
+}
+.p-5 {
+  padding: 3rem;
+}
+
+.text-danger {
+  color: var(--danger);
+}
+
+.btn-danger {
+}
+
+.m-lg-4 {
+}

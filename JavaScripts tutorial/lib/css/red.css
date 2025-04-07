@@ -1,0 +1,8 @@
+:root {
+  --primary: red;
+  --success: green;
+  --info: rgb(5, 237, 24);
+  --danger: rgb(109, 89, 226);
+  --gray: gray;
+  --warning: orange;
+}

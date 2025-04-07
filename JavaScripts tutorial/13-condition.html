@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // if else else if
+      // switch
+
+      const date = new Date();
+
+      console.log(date.getHours());
+      console.log(date.getMinutes());
+      console.log(date.getSeconds());
+
+      const hour = date.getHours();
+
+      //   console.log(10 == 20);
+      //   console.log(10 >= 10);
+
+      //   console.log(10 == 10 && 10 > 5);
+
+      //   console.log(false && false);
+
+      //   console.log(false || false);
+
+      if (hour > 5 && hour < 11) {
+        console.log("Good Morning");
+      } else if (hour > 11 && hour < 16) {
+        console.log("Good Afternoooooon");
+      } else if (hour > 16 && hour < 21) {
+        console.log("Good Evening");
+      } else {
+        console.log("Good Night");
+      }
+
+      const month = date.getMonth(); // start from 0 zerooooooooooooo
+
+      switch (month) {
+        case 0:
+          console.log("January");
+          break;
+        case 1:
+          console.log("February");
+          break;
+        case 2:
+          console.log("March");
+          break;
+        default:
+          console.log("Golabi");
+      }
+    </script>
+  </body>
+</html>

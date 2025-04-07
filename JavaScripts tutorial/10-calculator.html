@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container m-5">
+      <h3 class="alert alert-success" id="result"></h3>
+      <div class="input-group mb-3">
+        <input class="form-control" type="text" id="firstNumber" />
+        <span class="form-text">+</span>
+        <input class="form-control" type="text" id="secondNumber" />
+
+        <button class="btn btn-success" onclick="sum()">Sum</button>
+      </div>
+    </div>
+
+    <script>
+      function sum() {
+        const firstNumber = Number(document.getElementById("firstNumber").value);
+        const lastNumber = Number(document.getElementById("secondNumber").value);
+
+        document.getElementById("result").innerHTML = firstNumber + lastNumber;
+      }
+    </script>
+
+    <script src="./lib/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

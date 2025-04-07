@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+
+        1. شروع کن
+        2. دو عدد بگیر
+        3. دوعدد را در هم ضرب کن
+        4. نمایش بده
+        5. پایان
+        
+    */
+
+      // void
+      function sayMessage(message) {
+        writeLine();
+        console.log(message);
+        writeLine();
+      }
+
+      function writeLine() {
+        console.log("------------------------------------");
+      }
+
+      sayMessage("hello");
+
+      sayMessage("how do you do?");
+
+      function sum(a, b) {
+        return a + b;
+      }
+
+      console.log(sum(10, 20));
+
+      const sum2 = sum(30, 40);
+
+      console.log(sum2);
+
+      function avg(m, n) {
+        return sum(m, n) / 2;
+      }
+
+      function average(x, y) {
+        const sum = x + y;
+        return sum / 2;
+        // not works
+      }
+
+      // arrow function
+
+      function sum1(a, b) {
+        return a + b;
+      }
+
+      // const sum3 = (a, b) => a + b;
+
+      const sum3 = (a, b) => a + b;
+
+      const avg2 = (m, n) => sum3(m, n) / 2;
+    </script>
+  </body>
+</html>
