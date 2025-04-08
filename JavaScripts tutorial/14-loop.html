@@ -17,9 +17,13 @@
 
       // 5
 
+      console.log("for -------------------------------------");
+
       for (let i = 0; i < scores.length; i++) {
         console.log(scores[i]);
       }
+
+      console.log("while -------------------------------------");
 
       // while
 
@@ -31,7 +35,36 @@
 
       // do while
 
-      do {} while (condition);
+      //do {} while (condition);
+
+      // for in
+      // https://www.w3schools.com/js/js_loop_forin.asp
+      console.log("for in array -------------------------------------");
+
+      for (let i in scores) {
+        console.log(i);
+        console.log(scores[i]);
+      }
+      console.log("for in object -------------------------------------");
+
+      const car = {
+        brand: "Benz",
+        model: "C200",
+      };
+
+      for (let i in car) {
+        console.log(car[i]);
+      }
+
+      // console.log(car["brand"]);
+
+      console.log("for of -------------------------------------");
+
+      // for of
+
+      for (let v of scores) {
+        console.log(v);
+      }
     </script>
   </body>
 </html>

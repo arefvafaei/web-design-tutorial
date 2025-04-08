@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // data => object
+
+      data = `[
+    {
+        "id": 1,
+        "firstName": "Mobina",
+        "lastName": "Shirooie"
+    },
+    {
+        "id": 2,
+        "firstName": "Fatemeh Sadat",
+        "lastName": "Mobasheri"
+    }
+]`;
+
+      const myData = JSON.parse(data);
+
+      console.log(myData);
+
+      // json => data
+
+      console.log(JSON.stringify(myData));
+
+      // JSON.stringify
+    </script>
+  </body>
+</html>

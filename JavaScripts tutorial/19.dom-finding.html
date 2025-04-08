@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="h1"></h1>
+
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, ipsam.
+    </p>
+    <p class="paragraph">Saepe nisi fugit et eos voluptatum voluptates dicta neque itaque!</p>
+    <p class="paragraph">
+      Magnam, autem tempora quas asperiores nihil dicta corrupti repellat deserunt?
+    </p>
+    <p class="paragraph">
+      Pariatur error sit fugit placeat architecto sequi omnis suscipit exercitationem.
+    </p>
+
+    <script>
+      // 1:
+      const h1 = document.getElementById("h1");
+
+      h1.innerHTML = "TEST";
+      h1.style.backgroundColor = "yellow";
+
+      // 2
+      const paragraphs = document.getElementsByClassName("paragraph");
+
+      for (let i = 0; i < paragraphs.length; i++) {
+        if (i == 2) {
+          paragraphs[i].innerHTML = "AREFFFFF";
+        } else {
+          paragraphs[i].innerHTML = "TEST";
+        }
+      }
+
+      // 3
+      //   document.getElementsByName
+
+      // 6
+      document.querySelector(".paragraph").innerHTML = "Golabi";
+
+      // 7
+      document.querySelectorAll;
+    </script>
+  </body>
+</html>

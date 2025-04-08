@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      const div = document.querySelector("#root");
+
+      div.innerHTML = "<h1>test</h1>";
+
+      //   div.style.backgroundColor = "red";
+      div.className = "bg-success text-danger";
+      div.classList.add("border");
+      div.classList.remove("bg-success");
+
+      div.setAttribute("myAtt", "VALUE");
+
+      //   div.onclick = function () {
+      //     alert("hi");
+      //   };
+
+      //   div.onclick = function () {
+      //     alert("goodbye");
+      //   };
+
+      //   document.onload = function () {
+      //     //....
+      //   };
+
+      div.addEventListener("click", sayHi);
+
+      function sayHi() {
+        alert("hi");
+      }
+
+      div.addEventListener("click", sayBye);
+
+      function sayBye(event) {
+        div.removeEventListener("click", sayHi);
+        // alert("Bye");
+        console.log(event);
+      }
+    </script>
+  </body>
+</html>

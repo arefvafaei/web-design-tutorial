@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="__next"></div>
+
+    <script>
+      const h1 = document.createElement("h1");
+      h1.innerHTML = "This is a Header";
+      document.getElementById("__next").appendChild(h1);
+
+      const __next = document.getElementById("__next");
+      __next.className = "container";
+
+      const students = [
+        "Mohammad",
+        "Neda",
+        "Mobina",
+        "Soroush",
+        "Fatemeh",
+        "Anahita",
+        "Aref",
+        "Nima",
+        "Zahra",
+        "Mahdi",
+      ];
+
+      const ul = document.createElement("ul");
+      ul.classList = "list-group";
+
+      for (let i = 0; i < students.length; i++) {
+        const li = document.createElement("li");
+        li.innerHTML = students[i];
+        li.className = "list-group-item";
+        ul.appendChild(li);
+      }
+
+      __next.appendChild(ul);
+    </script>
+  </body>
+</html>

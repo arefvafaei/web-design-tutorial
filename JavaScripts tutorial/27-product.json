@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Iphone 16 pro max",
+    "price": 1200,
+    "image": "iphone-16-pro-max.jpg",
+    "category": "mobile"
+  },
+  {
+    "id": 2,
+    "title": "Samsung S24",
+    "price": 900,
+    "image": "samsung-s24.jpg",
+    "category": "mobile"
+  },
+  {
+    "id": 3,
+    "title": "Asus VivoBook 5",
+    "price": 2000,
+    "image": "vivo-book-5.jpg",
+    "category": "laptop"
+  }
+]

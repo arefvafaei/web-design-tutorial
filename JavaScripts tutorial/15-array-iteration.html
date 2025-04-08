@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // https://www.w3schools.com/js/js_array_iteration.asp
+      const scores = [7, 20, 12, 16];
+
+      //   scores.forEach(myFunction);
+
+      //   function myFunction(value) {
+      //     console.log(value);
+      //   }
+
+      // به ازای هر آیتم مقدار را پیمایش میکند
+      scores.forEach((v) => console.log(v));
+
+      // به ما یک آرایه جدید برمی گرداند
+      const scores100 = scores.map((v) => v * 5);
+
+      console.log(scores100);
+
+      //
+      const top10 = scores.filter((v) => v >= 14);
+
+      console.log(top10);
+
+      // reduce
+      const sum = scores.reduce((s, v) => (s += v));
+
+      console.log(sum / scores.length);
+    </script>
+  </body>
+</html>

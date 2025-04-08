@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const students = ["Mohammad", "Nima", "Amir", "Ali"];
+
+      // const mohammad = students[0];
+      // const nima = students[1];
+
+      const [mohammad, , amir] = students;
+
+      console.log(mohammad);
+
+      const car = {
+        brand: "Benz",
+        model: "C200",
+        color: "White",
+      };
+
+      //   const brand = car.brand;
+      //   const color = car.color;
+
+      const { color, model } = car;
+
+      console.log(model);
+    </script>
+  </body>
+</html>

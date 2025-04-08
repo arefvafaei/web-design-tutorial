@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calc(a, b, callbackfunction) {
+        const sum = a + b;
+        const min = a - b;
+        const mul = a * b;
+        const div = a / b;
+        callbackfunction(sum, min, mul, div);
+      }
+
+      //   calc(15, 5, myFunction);
+
+      //   function myFunction(s, m, mu, d) {
+      //     console.log(s, m, mu, d);
+      //   }
+
+      calc(15, 5, (s, m, mu, d) => console.log(s, m, mu, d));
+    </script>
+  </body>
+</html>

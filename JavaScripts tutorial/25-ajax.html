@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div></div>
+    <button class="btn btn-info" onclick="loadData()">Load Data</button>
+
+    <script>
+      function loadData() {
+        // برای نوشتن ایجکس ما چهار مرحله کار داریم
+
+        // 1.
+        const request = new XMLHttpRequest();
+
+        // 2.
+
+        request.onload = function () {
+          console.log(request.responseText);
+          const data = JSON.parse(request.responseText);
+          console.log(data);
+
+          for (let i = 0; i < data.length; i++) {
+            const card = document.createElement("div");
+
+            card.innerHTML = `
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">${data[i].firstName} ${data[i].lastName}</h5>
+    <p class="card-text">${data[i].id}</p>
+    
+  </div>
+</div>`;
+
+            document.body.appendChild(card);
+          }
+        };
+
+        // 3.
+
+        // endpoint
+        request.open("GET", "https://htmljs.ir/sa/product.json");
+
+        // 4.
+        request.send();
+      }
+    </script>
+  </body>
+</html>

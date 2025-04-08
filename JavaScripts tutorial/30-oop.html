@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // OOP
+
+      class Human {
+        constructor(fname, lname, id, birthYear) {
+          this.firstName = fname;
+          this.lastName = lname;
+          this.id = id;
+          this.birthYear = birthYear;
+        }
+
+        fullName() {
+          console.log(this.firstName + " " + this.lastName);
+        }
+
+        age() {
+          const date = new Date();
+          console.log(date.getFullYear() - this.birthYear);
+        }
+      }
+
+      class Employee extends Human {
+        constructor(fname, lname, id, birthYear, code, grade) {
+          super(fname, lname, id, birthYear);
+          this.code = code;
+          this.grade = grade;
+        }
+
+        fullName() {
+          console.log(this.lastName + " " + this.code);
+        }
+      }
+
+      const mohammad = new Human("Mohammd", "Salimi", 123, 2004);
+
+      console.log(mohammad);
+
+      mohammad.fullName();
+
+      mohammad.age();
+
+      const fatemeh = new Employee("Fatemeh", "Mobasheri", 124, 1996, "Fatemeh00", "C");
+
+      fatemeh.age();
+      fatemeh.fullName();
+
+      console.log(fatemeh);
+
+      const test = 10;
+    </script>
+  </body>
+</html>
